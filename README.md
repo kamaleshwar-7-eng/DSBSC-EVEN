@@ -23,13 +23,39 @@ Visualization: Plot the message signal, carrier signal, DSBSC modulated signal, 
 • Execute the code • If any Error, correct it in code and execute again • Verify the generated waveform using Tabulation and Model Waveform
 
 Model Waveform
+
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/736bef01-c500-4225-85e4-92c4e2fdf692" />
 
 Program
+```matlab
+Am=9.7;
+fm=366;
+Ac=19.4;
+fc=3660;
+fs=36600;
+t=0:1/fs:3/fm;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s1=(Ac+m).*cos(2*3.14*fc*t);
+s2=(Ac-m).*cos(2*3.14*fc*t);
+s=s1-s2;
+subplot(3,1,3);
+plot(t,s);
+```
 
-Output Graph
+Output Graph:
 
-Tablular Column
+<img width="1591" height="999" alt="image" src="https://github.com/user-attachments/assets/dc270334-2c09-4e79-b7ee-cc866aa5363a" />
+
+
+Tablular Column:
+
+![WhatsApp Image 2026-02-20 at 10,37,13 AM-Picsart-AiImageEnhancer](https://github.com/user-attachments/assets/d96f5865-0210-4ac4-b524-1bd5e7a48b27)
+
 
 Result
 
