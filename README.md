@@ -1,17 +1,17 @@
 # DSBSC-EVEN
-EX NO: 2 DSB-SC-AM MODULATOR AND DEMODULATOR
+# EX NO: 2 DSB-SC-AM MODULATOR AND DEMODULATOR
 
-AIM:
+# AIM:
 
 To write a program to perform DSBSC modulation and demodulation using SCI LAB and study its spectral characteristics
 
-EQUIPMENTS REQUIRED
+# EQUIPMENTS REQUIRED
 
 • Computer with i3 Processor • SCI LAB
 
 Note: Keep all the switch faults in off position
 
-Algorithm:
+# Algorithm:
 
 Define Parameters: • Fs: Sampling frequency. • T: Duration of the signal. • Fc: Carrier frequency. • Fm: Frequency of the message signal. • Amplitude: Maximum amplitude of the message signal.
 Generate Signals: • Message Signal: A sinusoidal signal that will be modulated. • Carrier Signal: A high-frequency sinusoidal signal used for modulation.
@@ -22,11 +22,11 @@ Visualization: Plot the message signal, carrier signal, DSBSC modulated signal, 
 
 • Execute the code • If any Error, correct it in code and execute again • Verify the generated waveform using Tabulation and Model Waveform
 
-Model Waveform
+# Model Waveform
 
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/736bef01-c500-4225-85e4-92c4e2fdf692" />
 
-Program
+# Program
 ```matlab
 Am=9.7;
 fm=366;
@@ -47,16 +47,16 @@ subplot(3,1,3);
 plot(t,s);
 ```
 
-Output Graph:
+# Output Graph:
 
 <img width="1591" height="999" alt="image" src="https://github.com/user-attachments/assets/dc270334-2c09-4e79-b7ee-cc866aa5363a" />
 
 
-Tablular Column:
+# Tablular Column:
 
 ![WhatsApp Image 2026-02-20 at 10,37,13 AM-Picsart-AiImageEnhancer](https://github.com/user-attachments/assets/d96f5865-0210-4ac4-b524-1bd5e7a48b27)
 
 
-Result
+# Result
 
 Thus the DSB-SC-AM Modulation and Demodulation is generated.
